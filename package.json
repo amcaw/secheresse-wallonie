@@ -1,0 +1,11 @@
+{
+  "name": "secheresse-wallonie",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "construire": "node scripts/construire.mjs"
+  },
+  "dependencies": {
+    "read-excel-file": "^5.8.0"
+  }
+}
