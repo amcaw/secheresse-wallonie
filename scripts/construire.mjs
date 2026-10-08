@@ -42,7 +42,7 @@ function trouverCommune(station) {
 function lireXml(texte) {
   const lignes = [];
   for (const [, bloc] of texte.matchAll(/<slowdown>([\s\S]*?)<\/slowdown>/g)) {
-    const station = bloc.match(/<station>([\s\S]*?)<\/station>/)?.[1];
+    const station = bloc.match(/<(station|id)>([\s\S]*?)<\/\1>/)?.[2];
     const index = Number(bloc.match(/<index>\s*(\d+)\s*<\/index>/)?.[1]);
     if (!station) continue;
     const etat = INDEX_XML[index];
