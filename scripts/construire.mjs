@@ -6,7 +6,7 @@ const DOSSIER_XML = new URL('data/xml/', RACINE);
 const DOSSIER_XLSX = new URL('data/xlsx/', RACINE);
 const SORTIE = new URL('donnees/', RACINE);
 
-const NIVEAUX_CONNUS = new Set([1, 2]);
+const NIVEAUX_CONNUS = new Set([1, 2, 3]);
 const XML_ARRETE = 5;
 const ALIAS = { FLORENNE: 'FLORENNES' };
 const NOM_FICHIER = /^SIT_PROD_EAU_COMMUNE_(\d{4})(\d{2})(\d{2})\.(xml|xlsx)$/i;
